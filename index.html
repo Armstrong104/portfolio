@@ -5,116 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talha - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
-<body>
-    <header>
-        <div class="header-content">
-            <h1>Talha Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<body class="font-[Poppins] bg-[#FAF8F1] text-[#C58940] ">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-[#C58940] to-[#E5BA73] text-[#FAF8F1] py-8 ">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <h1 class="text-4xl font-bold mb-4 ">Ameer Talha</h1>
+            <div
+                class="nav-links bg-gradient-to-r from-[#C58940] to-[#E5BA73] md:bg-none text-center duration-500 md:static text-lg absolute md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex flex-col md:flex-row  md:items-center md:gap-[2vw] gap-6 text-center font-bold">
+                    <li>
+                        <a class="hover:bg-[#FAEAB1] hover:text-[#C58940] px-3 py-1 rounded" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="hover:bg-[#FAEAB1] hover:text-[#C58940] px-3 py-1 rounded" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="hover:bg-[#FAEAB1] hover:text-[#C58940] px-3 py-1 rounded"
+                            href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="hover:bg-[#FAEAB1] hover:text-[#C58940] px-3 py-1 rounded" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
 
-            <section id="social-links">
-                <ul>
-                    <li><i class="<i class="fa fa-github" aria-hidden="false"></i><a href="https://github.com/Armstrong104" target="_blank">GitHub Profile</a></li>
-                    <li><a href="https://www.linkedin.com/in/ameer-talha-7a3939218/" target="_blank"> LinkedIn
-                            Profile</a></li>
-                </ul>
-            </section>
-        </div>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+
     </header>
-
-    <main>
-        <section id="about" >
-            <h2>About Me</h2>
-            <p>I'm a software developer with expertise in the LAMP stack, including MySql, Laravel, Apache, and PHP. Skilled in designing and developing scalable, full-stack web applications, managing databases, building server-side APIs, and creating dynamic, interactive front-end experiences.</p>
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto p-6 space-y-12 text-center">
+        <!-- About Section -->
+        <section id="about" class="transition-[margin-top] duration-500 ease-in-out
+        ">
+            <h2
+                class="text-3xl font-bold mb-4 relative inline-block after:content-[''] after:w-20 after:h-[3px] after:bg-[#C58940] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2">
+                About Me</h2>
+            <p class="text-[#E5BA73] text-lg leading-relaxed max-w-2xl mx-auto">
+                I'm a software developer with expertise in the LAMP stack, including MySql, Laravel, Apache, and PHP.
+                Skilled in designing and developing scalable, full-stack web applications, managing databases, building
+                server-side APIs, and creating dynamic, interactive front-end experiences.
+            </p>
         </section>
 
-        <section id="skills" >
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <span>HTML & CSS</span>
-                <span>Bootstrap</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>C & C++</span>
-                <span>Java</span>
-                <span>C#</span>
-                <span>Asp.Net</span>
-                <span>Laravel</span>
-                <span>MySql</span>
-                <span>Git & Github</span>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2
+                class="text-3xl font-bold mb-4 relative inline-block after:content-[''] after:w-20 after:h-[3px] after:bg-[#C58940] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2">
+                Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">HTML & CSS</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">Bootstrap</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">JavaScript</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">PHP</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">C & C++</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">Java</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">C#</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">Asp.Net</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">Laravel</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">MySql</span>
+                <span class="bg-[#FAEAB1] text-[#C58940] px-4 py-2 rounded-full font-bold ">Git & Github</span>
             </div>
         </section>
 
-        <section id="projects" >
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Evara App</h3>
-                    <p>An E-commerce web application which has frontend and backend functionalities with authentication
-                        system.<br>
-                    </p>
-                    <a href="https://github.com/Armstrong104/evara-app" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Texlink Services</h3>
-                    <p>A static website with mail-sending functionality and visually stunning frontend design.</p>
-                    <a href="https://texlinkservices.com/" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Felna Online</h3>
-                    <p>A SaaS web application platform with both frontend and backend functionality with authentication
-                        system.</p>
-                    <a href="https://felnaonline.com/" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Multi-Auth</h3>
-                    <p>A web application for multi-role authentication system for enhanced security.</p>
-                    <a href="https://demouser.iglweb.com/" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Fitness Tracker</h3>
-                    <p>A mobile application for tracking and maintaining your healthier life.</p>
-                    <a href="https://github.com/Armstrong104/Fitness-Tracker-Android-Project" target="_blank">View
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2
+                class="text-3xl font-bold mb-4 relative inline-block after:content-[''] after:w-20 after:h-[3px] after:bg-[#C58940] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2">
+                Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 ">
+                <!-- Example Project Card -->
+                <div
+                    class="bg-[#FAF8F1] text-[#C58940] border-2 border-[#E5BA73] rounded-[12px] shadow-md overflow-hidden transition-all duration-300 ease-in-out px-6 py-3 text-center hover:-translate-y-2 hover:shadow-lg hover:border-[#FAEAB1]">
+                    <h3 class="text-xl font-bold mb-2">Evara App</h3>
+                    <p class="text-[#E5BA73] mb-4 min-h-[100px]">An E-commerce web application which has frontend and
+                        backend
+                        functionalities with authentication system.</p>
+                    <a href="https://github.com/Armstrong104/evara-app" target="_blank"
+                        class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">View
                         Project</a>
                 </div>
-                <div class="project">
-                    <h3>Home Fair</h3>
-                    <p>A web application for those who are looking for their dream home.</p>
-                    <a href="https://github.com/Armstrong104/Home-Fair-DotNet-Project" target="_blank">View Project</a>
+                <div
+                    class="bg-[#FAF8F1] text-[#C58940] border-2 border-[#E5BA73] rounded-[12px] shadow-md overflow-hidden transition-all duration-300 ease-in-out px-6 py-3 text-center hover:-translate-y-2 hover:shadow-lg hover:border-[#FAEAB1]">
+                    <h3 class="text-xl font-bold mb-2">Texlink Services</h3>
+                    <p class="text-[#E5BA73] mb-4 min-h-[100px]">A static website with mail-sending functionality and
+                        visually stunning frontend design.</p>
+                    <a href="https://texlinkservices.com/" target="_blank"
+                        class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">View
+                        Project</a>
                 </div>
+                <div
+                    class="bg-[#FAF8F1] text-[#C58940] border-2 border-[#E5BA73] rounded-[12px] shadow-md overflow-hidden transition-all duration-300 ease-in-out px-6 py-3 text-center hover:-translate-y-2 hover:shadow-lg hover:border-[#FAEAB1]">
+                    <h3 class="text-xl font-bold mb-2">Felna Online</h3>
+                    <p class="text-[#E5BA73] mb-4 min-h-[100px]">A SaaS web application platform with both frontend and
+                        backend functionality with authentication system.</p>
+                    <a href="https://felnaonline.com/" target="_blank"
+                        class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">View
+                        Project</a>
+                </div>
+                <div
+                    class="bg-[#FAF8F1] text-[#C58940] border-2 border-[#E5BA73] rounded-[12px] shadow-md overflow-hidden transition-all duration-300 ease-in-out px-6 py-3 text-center hover:-translate-y-2 hover:shadow-lg hover:border-[#FAEAB1]">
+                    <h3 class="text-xl font-bold mb-2">Multi-Auth</h3>
+                    <p class="text-[#E5BA73] mb-4 min-h-[100px]">A web application for multi-role authentication system
+                        for enhanced security.</p>
+                    <a href="https://demouser.iglweb.com/" target="_blank"
+                        class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">View
+                        Project</a>
+                </div>
+                <div
+                    class="bg-[#FAF8F1] text-[#C58940] border-2 border-[#E5BA73] rounded-[12px] shadow-md overflow-hidden transition-all duration-300 ease-in-out px-6 py-3 text-center hover:-translate-y-2 hover:shadow-lg hover:border-[#FAEAB1]">
+                    <h3 class="text-xl font-bold mb-2">Fitness Tracker</h3>
+                    <p class="text-[#E5BA73] mb-4 min-h-[100px]">A mobile application for tracking and maintaining your
+                        healthier life.</p>
+                    <a href="https://github.com/Armstrong104/Fitness-Tracker-Android-Project" target="_blank"
+                        class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">View
+                        Project</a>
+                </div>
+                <div
+                    class="bg-[#FAF8F1] text-[#C58940] border-2 border-[#E5BA73] rounded-[12px] shadow-md overflow-hidden transition-all duration-300 ease-in-out px-6 py-3 text-center hover:-translate-y-2 hover:shadow-lg hover:border-[#FAEAB1]">
+                    <h3 class="text-xl font-bold mb-2">Home Fair</h3>
+                    <p class="text-[#E5BA73] mb-4 min-h-[100px]">A web application for those who are looking for their
+                        dream home.</p>
+                    <a href="https://github.com/Armstrong104/Home-Fair-DotNet-Project" target="_blank"
+                        class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">View
+                        Project</a>
+                </div>
+                <!-- Add more project cards similarly -->
             </div>
+
         </section>
 
-        <section id="contact" >
-            <h2>Contact Me</h2>
-            <p class="form-header">The journey of a thousand miles starts with just one step, so make your own today</p>
-            <form action="https://formspree.io/f/xjkvrorv" method="POST">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-      
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-      
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-      
-              <button type="submit">Send Message</button>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2
+                class="text-3xl font-bold mb-4 relative inline-block after:content-[''] after:w-20 after:h-[3px] after:bg-[#C58940] after:absolute after:bottom-[-10px] after:left-1/2 after:-translate-x-1/2">
+                Contact Me</h2>
+            <p class="text-lg mb-6">The journey of a thousand miles starts with just one step, so make your own today.
+            </p>
+            <form action="https://formspree.io/f/xjkvrorv" method="POST"
+                class="flex flex-col max-w-xl mx-auto space-y-4">
+                <label for="name" class="text-left">Name:</label>
+                <input type="text" id="name" name="name" required class="p-2 border border-gray-300 rounded">
+                <label for="email" class="text-left">Email:</label>
+                <input type="email" id="email" name="email" required class="p-2 border border-gray-300 rounded">
+                <label for="message" class="text-left">Message:</label>
+                <textarea id="message" name="message" rows="4" required
+                    class="p-2 border border-gray-300 rounded"></textarea>
+                <button type="submit"
+                    class="inline-block bg-[#C58940] text-[#FAF8F1] px-4 py-2 rounded hover:bg-[#FAEAB1] hover:text-[#C58940] transition">Send
+                    Message</button>
+
             </form>
-          </section>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; Ameer Talha, All Rights Reserved</p>
+    <!-- Footer -->
+    <footer
+        class="bg-[#C58940] text-[#FAF8F1] py-6 text-center flex flex-col justify-center items-center gap-6 md:flex-row  md:justify-between md:px-28">
+
+        <div class="flex items-center gap-4 ">
+            <a href="https://github.com/Armstrong104" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                    y="0px" width="35" height="35" viewBox="0 0 48 48">
+                    <path
+                        d="M 24 4 C 19.963209 4 16.192498 5.2011807 13.046875 7.2636719 A 1.50015 1.50015 0 1 0 14.691406 9.7714844 C 17.365783 8.0179755 20.556791 7 24 7 C 33.406292 7 41 14.593708 41 24 C 41 26.707746 40.36968 29.257322 39.248047 31.525391 A 1.5001887 1.5001887 0 0 0 41.9375 32.855469 C 43.257867 30.185538 44 27.174254 44 24 C 44 12.972292 35.027708 4 24 4 z M 15.800781 13.076172 C 14.472781 15.202172 15.273563 17.527813 15.726562 18.507812 C 14.637562 19.788813 14 21.334 14 23 C 14 26.78 17.280547 29.939391 21.685547 30.775391 C 20.376547 31.448391 19.399609 32.67225 19.099609 34.15625 L 17.783203 34.15625 C 16.486203 34.15625 15.98225 33.629234 15.28125 32.740234 C 14.58925 31.851234 13.845172 31.253859 12.951172 31.005859 C 12.469172 30.954859 12.144453 31.321484 12.564453 31.646484 C 13.983453 32.612484 14.081391 34.193516 14.650391 35.228516 C 15.168391 36.160516 16.229687 37 17.429688 37 L 19 37 L 19 40.251953 C 12.043156 38.12245 7 31.665102 7 24 C 7 21.314402 7.6195896 18.783427 8.7246094 16.529297 A 1.50015 1.50015 0 0 0 7.4492188 14.351562 A 1.50015 1.50015 0 0 0 6.03125 15.208984 C 4.7302698 17.862854 4 20.851598 4 24 C 4 35.027708 12.972292 44 24 44 C 28.472909 44 32.618147 42.525863 35.951172 40.039062 A 1.5009817 1.5009817 0 1 0 34.15625 37.632812 C 32.617628 38.780793 30.876119 39.662932 29 40.240234 L 29 35.136719 C 29 33.228719 27.902453 31.591391 26.314453 30.775391 C 30.719453 29.939391 34 26.78 34 23 C 34 21.426 33.423406 19.961609 32.441406 18.724609 C 32.883406 17.356609 33.371219 14.953172 32.199219 13.076172 C 29.948219 13.076172 28.469672 14.622797 27.763672 15.591797 C 26.601672 15.213797 25.333 15 24 15 C 22.667 15 21.398328 15.213797 20.236328 15.591797 C 19.530328 14.622797 18.052781 13.076172 15.800781 13.076172 z">
+                    </path>
+                </svg></a>
+            <a href="https://www.linkedin.com/in/ameer-talha-7a3939218/" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+                    <path fill="#0288D1"
+                        d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                    </path>
+                    <path fill="#FFF"
+                        d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                    </path>
+                </svg></a>
+            <a href="https://www.facebook.com/ameer.talha.346603" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+                    <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615" y1="9.993"
+                        y2="40.615" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#2aa4f4"></stop>
+                        <stop offset="1" stop-color="#007ad9"></stop>
+                    </linearGradient>
+                    <path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"
+                        d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
+                    <path fill="#fff"
+                        d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z">
+                    </path>
+                </svg></a>
+        </div>
+
+        <p class="text-lg">&copy; Ameer Talha, All Rights Reserved</p>
     </footer>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        const aboutSection = document.getElementById('about');
+
+        function onToggleMenu(e) {
+            // Toggle the menu icon between 'menu' and 'close'
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+
+            // Toggle the visibility of the navigation menu
+            navLinks.classList.toggle('top-[12%]');
+
+            // Add or remove margin-top for the about section
+            if (navLinks.classList.contains('top-[12%]')) {
+                aboutSection.style.marginTop = '12rem';
+                aboutSection.style.animationDuration = 'ease-in-out';
+            } else {
+                aboutSection.style.marginTop = '0';
+            }
+        }
+    </script>
 </body>
 
 </html>
